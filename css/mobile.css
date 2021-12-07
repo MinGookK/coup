@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+  :root {
+    --mobile-h-two-size: 1.1rem;
+    --mobile-h-three-size: 0.9rem;
+  }
+  /*시작페이지*/
+  #main {
+    display: flex;
+    flex-direction: column;
+    width: 70%%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin: auto;
+  }
+  #main h1 {
+    font-size: 130%;
+    margin: 50px auto;
+  }
+  #main img {
+    width: 50%;
+    /* filter: invert(37%) sepia(17%) saturate(963%) hue-rotate(
+  317deg
+  ) brightness(91%) contrast(79%); */
+  }
+  #main p {
+    font-size: 130%;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  /*결과페이지*/
+  #result .filters {
+    width: 75%;
+  }
+  #result .items {
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  #result .items .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #result .items .item a img {
+    width: 80%;
+    height: 80%;
+    min-width: 139px;
+    border-radius: var(--border-radius);
+  }
+  #result .items .item .protein-info {
+    text-align: left;
+  }
+  #result h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #result h2 {
+    font-size: var(--mobile-h-two-size);
+  }
+  #result h3,
+  #result li {
+    font-size: var(--mobile-h-three-size);
+  }
+}

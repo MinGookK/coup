@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proteen</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section id="main">
+        <img src="./img/protein-test.png" alt="main-image" />
+        <p>
+          나에게 맞는 프로틴은 뭘까?<br />
+          운동 목적, 알러지 걸러서<br />
+          "알아서" 알려드림 <br />
+          일단 시작 눌러봐.
+        </p>
+        <button class="startQna button-next">시작하기</button>
+      </section>
+      <section id="qna">
+        <div class="status">
+          <div class="statusBar"></div>
+        </div>
+        <div class="qBox"></div>
+        <div class="aBox"></div>
+      </section>
+    </div>
+    <section id="result">
+      <h1>지금 나온거 믿고 먹으면 됨</h1>
+      <div class="filters">
+        <button class="sortProtein">단백질 높은 순</button>
+        <button class="sortCal">칼로리 낮은 순</button>
+      </div>
+      <div class="items"></div>
+    </section>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/start.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+/* Common setting */
+:root {
+  --main-background: #fefefe;
+  --border-radius: 20px;
+  --font-size: 20px;
+  --page-background: #f9ebde;
+  --page-font-color: #815854;
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section {
+  height: 60%;
+}
+/* Main Page */
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+  padding: 4rem;
+}
+
+#main p {
+  font-size: var(--font-size);
+  text-align: center;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+#main img {
+  width: 40%;
+  /* padding: 10px;
+  border: 1px solid var(--page-background); */
+}
+
+/* QnA Page */
+#qna {
+  display: none;
+  width: 80vw;
+  margin: -5rem auto 0 auto;
+  padding: 3rem;
+}
+.status {
+  height: 15px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+}
+.status .statusBar {
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#815853+12,f6e6b4+100 */
+  background: #815853; /* Old browsers */
+  background: -moz-linear-gradient(left, #815853 12%, #f6e6b4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #815853 12%, #f6e6b4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #815853 12%, #f6e6b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#815853', endColorstr='#f6e6b4',GradientType=1 ); /* IE6-9 */
+  border-radius: var(--border-radius);
+}
+.qBox {
+  background-color: var(--main-background);
+  text-align: center;
+  border-radius: var(--border-radius);
+  margin: 5vh 0;
+  padding: 3vh;
+  font-size: var(--font-size);
+}
+.aBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.answerList {
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+  display: block;
+  width: 100%;
+  margin: 1vw 0;
+  padding: 2vh;
+  transition: 0.3s;
+}
+label.answerList {
+  width: 100%;
+  text-align: center;
+}
+label.checked,
+#result .filters button.checked {
+  background-color: var(--page-font-color);
+  color: #fefefe;
+}
+
+.info {
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+.next {
+  font-size: 1.2rem;
+}
+
+/* Result Page */
+#result {
+  display: none;
+}
+#result h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+#result button {
+  display: block;
+  border: 1px solid #000;
+  margin: 3rem auto;
+}
+#result .filters {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+}
+#result .filters button {
+  background-color: var(--page-background);
+}
+#result .filters button:disabled {
+  cursor: not-allowed;
+}
+#result .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+#result .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  padding: 1rem;
+}
+#result .items .item:hover {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+#result .items .item a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#result .items .item a img {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+}
+#result .items .item .protein-info {
+  text-align: center;
+}
+#result .items .item h2 {
+  margin: 0.5rem 0;
+}
+#result .items .item .nutrient li {
+  margin: 0.2rem 0;
+}

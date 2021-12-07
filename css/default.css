@@ -1,0 +1,66 @@
+:root {
+  --page-background: #f9ebde;
+  --page-font-color: #815854;
+  --basic-font-size: 1.5rem;
+  --h-two-size: 1.1rem;
+  --h-three-size: 0.9rem;
+  --font-size: 20px;
+}
+html {
+  background-color: var(--page-background);
+  color: #000;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+h2 {
+  font-size: var(--h-two-size);
+}
+h3 {
+  font-size: var(--h-three-size);
+}
+ul {
+  opacity: 0.8;
+}
+
+li {
+  font-size: var(--h-three-size);
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem 1rem;
+
+  color: #000;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--page-font-color);
+  display: inline-block;
+  width: auto;
+  border: none;
+
+  border-radius: 4px;
+
+  transition: 0.3s;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.button-next {
+  color: var(--main-background);
+  font-size: var(--font-size);
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+input[type='checkbox'] + label {
+  cursor: pointer;
+  transition: 0.3s;
+}
